@@ -1,0 +1,155 @@
+2025.10.12 22:14:52 INFO  Started: Metals version 1.6.2 in folders 'C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams' for client Zed Nightly 0.209.0.
+Oct 12, 2025 10:14:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/Users/pixel/Desktop/Education/5.%20semester/Software%20Design%20Methods/Assignments/cs332-assign/streams/src/main/scala/streams/Bloxorz.scala",
+      "languageId": "scala",
+      "version": 0,
+      "text": ""
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:743)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:469)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2025.10.12 22:14:54 WARN  Unsupported sbt version 0.13.7
+2025.10.12 22:14:54 WARN  Build server is not auto-connectable.
+2025.10.12 22:15:31 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Oct 12, 2025 10:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.documentHighlights(org.eclipse.lsp4j.TextDocumentPositionParams)
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.documentHighlights(org.eclipse.lsp4j.TextDocumentPositionParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:466)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:632)
+	at scala.meta.internal.metals.SourceMapper.input$1(SourceMapper.scala:30)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$2(SourceMapper.scala:35)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.default$1(SourceMapper.scala:35)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$5(SourceMapper.scala:52)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.pcMapping(SourceMapper.scala:52)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1570)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1532)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$3(Compilers.scala:1432)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:1428)
+	at scala.meta.internal.metals.Compilers.documentHighlight(Compilers.scala:811)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$documentHighlights$2(MetalsLspService.scala:998)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.documentHighlights(MetalsLspService.scala:997)
+	at scala.meta.internal.metals.WorkspaceLspService.documentHighlights(WorkspaceLspService.scala:534)
+	at scala.meta.metals.lsp.DelegatingScalaService.documentHighlights(DelegatingScalaService.scala:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+Oct 12, 2025 10:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2025.10.12 22:15:31 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Oct 12, 2025 10:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.documentHighlights(org.eclipse.lsp4j.TextDocumentPositionParams)
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.documentHighlights(org.eclipse.lsp4j.TextDocumentPositionParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:466)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:632)
+	at scala.meta.internal.metals.SourceMapper.input$1(SourceMapper.scala:30)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$2(SourceMapper.scala:35)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.default$1(SourceMapper.scala:35)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$5(SourceMapper.scala:52)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.pcMapping(SourceMapper.scala:52)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1570)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1532)
+	at scala.meta.internal.metals.Compilers.$anonfun$withPCAndAdjustLsp$3(Compilers.scala:1432)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.Compilers.withPCAndAdjustLsp(Compilers.scala:1428)
+	at scala.meta.internal.metals.Compilers.documentHighlight(Compilers.scala:811)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$documentHighlights$2(MetalsLspService.scala:998)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.documentHighlights(MetalsLspService.scala:997)
+	at scala.meta.internal.metals.WorkspaceLspService.documentHighlights(WorkspaceLspService.scala:534)
+	at scala.meta.metals.lsp.DelegatingScalaService.documentHighlights(DelegatingScalaService.scala:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2025.10.12 22:15:31 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.12 22:15:32 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.12 22:15:32 INFO  Shutting down server
+2025.10.12 22:15:32 INFO  shutting down Metals
