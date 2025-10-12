@@ -153,3 +153,10 @@ Caused by: java.nio.file.NoSuchFileException: C:\Users\pixel\Desktop\Education\5
 2025.10.12 22:15:32 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
 2025.10.12 22:15:32 INFO  Shutting down server
 2025.10.12 22:15:32 INFO  shutting down Metals
+2025.10.12 22:16:24 INFO  Started: Metals version 1.6.2 in folders 'C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams' for client Zed Nightly 0.209.0.
+2025.10.12 22:16:25 WARN  Unsupported sbt version 0.13.7
+2025.10.12 22:16:25 WARN  Build server is not auto-connectable.
+2025.10.12 22:16:25 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.12 22:16:25 WARN  no build target for: C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala
+2025.10.12 22:16:36 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.12 22:16:36 INFO  no build target found for C:\Users\pixel\Desktop\Education\5. semester\Software Design Methods\Assignments\cs332-assign\streams\src\main\scala\streams\Bloxorz.scala. Using presentation compiler with project's scala-library version: 3.3.6
